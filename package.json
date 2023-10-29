@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "^2.69.0-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-authorizers-alpha": "^2.69.0-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "^2.69.0-alpha.0",
+    "@aws-cdk/aws-appsync-alpha": "^2.50.0-alpha.0",
+    "@types/aws-lambda": "^8.10.108",
+    "aws-cdk-lib": "^2.0.0",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1027.0",
+    "constructs": "^10.0.0"
+  },
+  "scripts": {
+    "deploy-to-production": "sh ./scripts/deploy.sh .env.production",
+    "deploy-to-staging": "sh ./scripts/deploy.sh .env.local",
+    "start": "cd client && yarn start",
+    "setup": "sh ./scripts/setup.sh",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "{client/src,deployment,lambdas,schema}/**/*.{css,graphql,js,json,jsx,md,scss,ts,tsx}": "prettier --write",
+    "*.py": "black"
+  }
+}

@@ -1,0 +1,39 @@
+.form-viewer-sections {
+  background-color: white;
+  border: 1px solid #aeb5be;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.form-viewer-section {
+  border-bottom: 1px solid #aeb5be;
+  padding: 10px;
+}
+
+.form-viewer-section:last-child {
+  border-bottom: 0;
+}
+
+.form-viewer-section-title {
+  color: #102a43;
+  font-weight: 500;
+}
+
+.form-viewer-diagram {
+  color: #4a5058;
+}
+
+.form-viewer-list {
+  color: #4a5058;
+  margin-top: 5px;
+}
+
+.form-viewer-list ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.form-viewer-text {
+  color: #4a5058;
+  margin-top: 5px;
+}

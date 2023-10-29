@@ -1,0 +1,9 @@
+{
+  "python.autoComplete.extraPaths": ["./lambdas/base"],
+  "python.analysis.extraPaths": ["./lambdas/base"],
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4  
+  }
+}

@@ -1,0 +1,28 @@
+.list {
+  background-color: white;
+  border: 1px solid #aeb5be;
+  border-radius: 6px;
+}
+
+.list-link a {
+  color: #102a43;
+  margin-top: 10px;
+}
+
+.list-options {
+  display: flex;
+  margin-left: auto;
+}
+
+.list-property {
+  color: #4a5058;
+}
+
+.list-title {
+  color: #102a43;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

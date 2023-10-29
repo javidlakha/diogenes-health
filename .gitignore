@@ -1,0 +1,32 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+**/node_modules
+/.pnp
+.pnp.js
+
+# testing
+**/coverage
+/tests/credentials.json
+
+# production
+**/build
+
+# aws cdk outputs
+/cdk.out
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__
+venv
+*.egg-info
+
+# env
+.env
+.env.local
+.env.production

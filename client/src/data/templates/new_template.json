@@ -1,0 +1,26 @@
+{
+  "name": "New template",
+  "sections": [
+    {
+      "description": "",
+      "name": "Presenting complaint",
+      "type": "text"
+    },
+    {
+      "description": "",
+      "name": "Patient assessed by",
+      "options": [
+        { "name": "ED Doctor" },
+        { "name": "Specialty Doctor" },
+        { "name": "Nurse" }
+      ],
+      "type": "single_selection"
+    },
+    {
+      "background": "8ed6221c-5186-4e92-9339-ebf4314cba33",
+      "description": "",
+      "name": "Chest sounds",
+      "type": "diagram"
+    }
+  ]
+}

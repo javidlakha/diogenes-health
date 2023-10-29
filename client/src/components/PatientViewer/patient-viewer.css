@@ -1,0 +1,48 @@
+.patient-viewer-form {
+  background-color: white;
+  border: 1px solid #aeb5be;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+@media print {
+  .patient-viewer-form-body {
+    display: block !important;
+  }
+}
+
+.patient-viewer-form-header-open {
+  background-color: #ebedef;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid #aeb5be;
+}
+
+.patient-viewer-form-header-closed {
+  background-color: #ebedef;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.patient-viewer-form-header {
+  color: #102a43;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.patient-viewer-form-header a {
+  color: #102a43;
+}
+
+@media print {
+  .patient-viewer-form-toggle {
+    display: none !important;
+  }
+}

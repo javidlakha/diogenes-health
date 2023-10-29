@@ -1,0 +1,101 @@
+.assistant {
+  background-color: white;
+  border: 1px solid #aeb5be;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+@media print {
+  .assistant {
+    display: none !important;
+  }
+}
+
+.assistant-button button {
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  color: #4a5058;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.assistant-button button:hover {
+  background: #ebedef;
+}
+
+.assistant-button-text {
+  margin-left: 5px;
+  text-align: left;
+}
+
+.assistant-input {
+  align-items: center;
+  margin-top: 5px;
+}
+
+.assistant-input-section {
+  padding: 10px;
+}
+
+.assistant-message {
+  border-bottom: 1px solid #aeb5be;
+  padding: 10px;
+}
+
+.assistant-message-content {
+  color: #4a5058;
+  margin-top: 5px;
+}
+
+.assistant-message-content-line:after {
+  content: "\200b";
+}
+
+.assistant-messages :last-child {
+  border-bottom: none;
+}
+
+.assistant-notice {
+  color: #4a5058;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.assistant-role {
+  color: #102a43;
+  font-weight: 500;
+}
+
+.assistant-role::first-letter {
+  text-transform: capitalize;
+}
+
+.assistant-registration-required {
+  color: #4a5058;
+  padding: 10px;
+}
+
+.assistant-registration-required a {
+  color: #4a5058;
+  text-decoration: underline;
+}
+
+.assistant-status {
+  align-items: center;
+  color: #4a5058;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.assistant-title {
+  color: #102a43;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}

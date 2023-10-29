@@ -1,0 +1,109 @@
+.authentication-page {
+  background-color: #f2f3f5;
+}
+
+.authentication-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+  width: min(calc(100% - 20px), 325px);
+}
+
+.authentication-form {
+  background-color: white;
+  border: 1px solid #aeb5be;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.authentication-title {
+  color: #102a43;
+  font-size: 24px;
+}
+
+.authentication-notice {
+  color: #4a5058;
+  margin-top: 5px;
+}
+
+.authentication-label {
+  color: #102a43;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.authentication-input {
+  margin-top: 5px;
+}
+
+.authentication-input input {
+  border: 1px solid #aeb5be;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #343a41;
+  font-size: 16px;
+  padding: 5px;
+  width: 300px;
+}
+
+.authentication-input input:focus {
+  outline-color: #858c95;
+}
+
+.authentication-input-error {
+  margin-top: 5px;
+}
+
+.authentication-input-error input {
+  border: 2px solid #881a1b;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #343a41;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+}
+
+.authentication-input-error input:focus {
+  outline-color: #881a1b;
+}
+
+.authentication-buttons {
+  color: #4a5058;
+  margin-top: 25px;
+}
+
+.authentication-error-notice {
+  color: #881a1b;
+}
+
+.authentication-buttons button {
+  align-items: center;
+  background: #4a5058;
+  border: none;
+  border-radius: 6px;
+  color: #f2f3f5;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 10px;
+  justify-content: center;
+  width: 300px;
+}
+
+.authentication-buttons button:hover {
+  background: #858c95;
+}
+
+.authentication-privacy-policy {
+  color: #4a5058;
+  font-size: 14px;
+  margin-top: 25px;
+  width: 300px;
+}
+
+.authentication-privacy-policy a {
+  color: #4a5058;
+}

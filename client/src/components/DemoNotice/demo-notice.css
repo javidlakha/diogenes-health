@@ -1,0 +1,19 @@
+.demo-container {
+  background-color: #dee2e6;
+  border-bottom: 1px solid #aeb5be;
+  position: relative;
+}
+
+.demo-notice {
+  color: #102a43;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  position: relative;
+  width: min(calc(100% - 20px), 600px);
+}
+
+.demo-notice a {
+  color: #102a43;
+  text-decoration: underline;
+}

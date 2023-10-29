@@ -1,0 +1,78 @@
+.form-creator-buttons {
+  color: #4a5058;
+  margin-top: 25px;
+}
+
+.form-creator-buttons button {
+  align-items: center;
+  background: #4a5058;
+  border: none;
+  border-radius: 6px;
+  color: #f2f3f5;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.form-creator-buttons button:hover {
+  background: #858c95;
+}
+
+.form-creator-not-signed-in-notice {
+  color: #4a5058;
+  margin-top: 20px;
+}
+
+.form-creator-not-signed-in-notice a {
+  color: #4a5058;
+  text-decoration: underline;
+}
+
+.form-creator-not-signed-in-button {
+  color: #4a5058;
+  margin-top: 15px;
+}
+
+.form-creator-not-signed-in-button button {
+  align-items: center;
+  background: none;
+  border: 1px solid #174937;
+  border-radius: 6px;
+  color: #174937;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.form-creator-not-signed-in-button button:hover {
+  background: #174937;
+  color: white;
+}
+
+.form-creator-option {
+  color: #102a43;
+}
+
+.form-creator-option input[type="radio"] {
+  accent-color: #858c95;
+  color: #102a43;
+  margin-left: 0;
+}
+
+.form-creator-option-error {
+  color: #102a43;
+}
+
+.form-creator-option-error input[type="radio"] {
+  accent-color: #881a1b;
+  color: #102a43;
+  margin-left: 0;
+}
+
+.form-creator-option-heading {
+  color: #4a5058;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}

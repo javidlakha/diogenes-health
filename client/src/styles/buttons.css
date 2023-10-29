@@ -1,0 +1,123 @@
+.button-text {
+  margin-left: 10px;
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-button {
+  margin-top: 10px;
+}
+
+.footer-button button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: #102a43;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.footer-button button:hover {
+  background: #dee2e6;
+}
+
+.footer-button-inverted {
+  margin-top: 10px;
+}
+
+.footer-button-inverted button {
+  background: #4a5058;
+  border: none;
+  border-radius: 50%;
+  color: #f2f3f5;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.footer-button-inverted button:hover {
+  background: #858c95;
+}
+
+.large-primary-button button {
+  align-items: center;
+  background: #4a5058;
+  border: none;
+  border-radius: 6px;
+  color: #f2f3f5;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.large-primary-button button:hover {
+  background: #858c95;
+}
+
+.large-secondary-button button {
+  align-items: center;
+  background: none;
+  border: 1px solid #aeb5be;
+  border-radius: 6px;
+  color: #4a5058;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.large-secondary-button button:hover {
+  background: #ebedef;
+}
+
+.options-bar-buttons {
+  display: flex;
+}
+
+.options-bar-buttons button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: #4a5058;
+  cursor: pointer;
+  height: 50px;
+  padding: 10px;
+  width: 50px;
+}
+
+.options-bar-buttons button:hover {
+  background: #ebedef;
+}
+
+.options-buttons {
+  display: flex;
+}
+
+.small-primary-button button {
+  background: #4a5058;
+  border: none;
+  border-radius: 50%;
+  color: #f2f3f5;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.small-primary-button button:hover {
+  background: #858c95;
+}
+
+.small-secondary-button button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: #4a5058;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.small-secondary-button button:hover {
+  background: #ebedef;
+}

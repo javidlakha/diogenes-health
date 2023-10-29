@@ -1,0 +1,62 @@
+.patient-manager-form {
+  align-items: center;
+  border-top: 1px solid #aeb5be;
+  display: flex;
+  gap: 15px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.patient-manager-form-metadata {
+  display: flex;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .patient-manager-form-metadata {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+
+.patient-manager-form-last-modified {
+  color: #4a5058;
+}
+
+.patient-manager-form-name {
+  color: #4a5058;
+  flex-grow: 1;
+}
+
+.patient-manager-form-name a {
+  color: #4a5058;
+}
+
+.patient-manager-form-options {
+  color: #4a5058;
+  display: flex;
+  margin-left: auto;
+}
+
+.patient-manager-patient {
+  background-color: white;
+  border: 1px solid #aeb5be;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.patient-manager-patient-identifier {
+  background-color: #ebedef;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: #102a43;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.patient-manager-patient-identifier a {
+  color: #102a43;
+}

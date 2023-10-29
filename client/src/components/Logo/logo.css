@@ -1,0 +1,15 @@
+.logo {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.logo-title a {
+  color: #102a43;
+  text-underline-offset: 10px;
+}

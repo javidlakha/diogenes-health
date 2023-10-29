@@ -1,0 +1,86 @@
+.editable-title-large input {
+  border-width: 0 0 2px;
+  border-color: #aeb5be;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #102a43;
+  font-size: 36px;
+  outline: 0;
+  padding-bottom: 5px;
+  padding-left: 0;
+  width: 100%;
+}
+
+.editable-title-large input:focus {
+  border-color: #858c95;
+}
+
+.editable-title-small input {
+  border-color: #aeb5be;
+  border-radius: 0;
+  border-width: 0 0 2px;
+  box-sizing: border-box;
+  color: #102a43;
+  font-size: 24px;
+  height: 30px;
+  outline: 0;
+  padding-bottom: 5px;
+  padding-left: 0;
+  width: 100%;
+}
+
+.editable-title-small input:focus {
+  border-color: #858c95;
+}
+
+.text-input {
+  margin-top: 5px;
+}
+
+.text-input input {
+  border: 1px solid #aeb5be;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #343a41;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+}
+
+.text-input input:focus {
+  outline-color: #858c95;
+}
+
+.text-input-error {
+  margin-top: 5px;
+}
+
+.text-input-error input {
+  border: 2px solid #881a1b;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #343a41;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+}
+
+.text-input-error input:focus {
+  outline-color: #881a1b;
+}
+
+.textarea textarea {
+  border-color: #aeb5be;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #102a43;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 5px;
+  resize: none;
+  width: 100%;
+}
+
+.textarea textarea:focus {
+  outline-color: #858c95;
+}

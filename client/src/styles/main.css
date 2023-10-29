@@ -1,0 +1,131 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+  width: min(calc(100% - 20px), 600px);
+}
+
+.container-large {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+  width: min(calc(100% - 20px), 800px);
+}
+
+.content-container {
+  flex-grow: 1;
+}
+
+.error-notice {
+  color: #881a1b;
+}
+
+.error-notice a {
+  color: #881a1b;
+}
+
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+  width: min(calc(100% - 20px), 600px);
+}
+
+.header {
+  background-color: white;
+  border: 1px solid #aeb5be;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.options-bar {
+  border-top: 1px solid #aeb5be;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+@media print {
+  .options-bar {
+    display: none !important;
+  }
+}
+
+.options-header {
+  background-color: white;
+  border: 1px solid #aeb5be;
+  border-radius: 6px;
+}
+
+.options-header-title {
+  color: #102a43;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.notice {
+  color: #4a5058;
+  margin-top: 5px;
+}
+
+.notice a {
+  color: #4a5058;
+}
+
+.page {
+  background-color: #f2f3f5;
+}
+
+.subtitle {
+  color: #102a43;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.title-small {
+  color: #102a43;
+  font-size: 24px;
+}
+
+.section {
+  padding: 10px;
+  width: 100%;
+}
+
+.section-drag-handle {
+  align-items: center;
+  background-color: #dee2e6;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  display: flex;
+}
+
+.section-container {
+  background-color: white;
+  border: 1px solid #aeb5be;
+  border-radius: 6px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.sections-container {
+  background-color: #f2f3f5;
+  margin-top: 20px;
+}
+
+.spacer {
+  margin-top: 20px;
+}

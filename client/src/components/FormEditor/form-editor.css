@@ -1,0 +1,182 @@
+.form-editor-options {
+  display: flex;
+}
+
+.form-editor-title-editable {
+  color: #4a5058;
+  margin-bottom: 20px;
+}
+
+.form-editor-form-name {
+  color: #102a43;
+  font-size: 24px;
+}
+
+.form-editor-patient-identifier {
+  color: #4a5058;
+  font-size: 24px;
+}
+
+.form-editor-options-left-group {
+  display: flex;
+  gap: 5px;
+}
+
+.form-editor-options-right-group {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.form-editor-section-heading {
+  align-items: baseline;
+  display: flex;
+}
+
+.form-editor-section-heading :first-child {
+  flex: 1 1 auto;
+}
+
+.form-editor-section-heading > div:not(:first-child) {
+  margin-left: 10px;
+  width: 37.5px;
+}
+
+.form-editor-section-settings {
+  align-items: baseline;
+  display: flex;
+}
+
+.form-editor-section-settings :first-child {
+  flex: 1 1 auto;
+}
+
+.form-editor-section-settings > div:not(:first-child) {
+  margin-left: 10px;
+  width: 75px;
+}
+
+.form-editor-section-name {
+  color: #102a43;
+  font-size: 24px;
+}
+
+.form-editor-section-description {
+  color: #4a5058;
+  margin-top: 5px;
+}
+
+.form-editor-section-description-line:after {
+  content: "\200b";
+}
+
+.form-editor-instructions {
+  color: #4a5058;
+}
+
+.form-editor-notes {
+  color: #4a5058;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-editor-setting {
+  margin-top: 20px;
+}
+
+.form-editor-setting textarea {
+  border-color: #aeb5be;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #102a43;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.form-editor-setting textarea:focus {
+  outline-color: #858c95;
+}
+
+.form-editor-setting-title {
+  color: #243b53;
+}
+
+.form-editor-setting-description {
+  color: #4a5058;
+}
+
+.form-editor-content {
+  margin-top: 10px;
+}
+
+.form-editor-content-option {
+  color: #102a43;
+}
+
+.form-editor-content-option input[type="radio"] {
+  accent-color: #858c95;
+  color: #102a43;
+}
+
+.form-editor-content textarea {
+  border-color: #aeb5be;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #102a43;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.form-editor-content textarea:focus {
+  outline-color: #858c95;
+}
+
+.form-editor-diagram-instructions {
+  color: #4a5058;
+}
+
+.form-editor-diagram-options {
+  display: flex;
+  margin-top: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.form-editor-diagram-options button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: #4a5058;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.form-editor-diagram-options button:hover {
+  background: #ebedef;
+}
+
+.form-editor-diagram-options-active button {
+  background: #ebedef;
+}
+
+.form-editor-diagram-options-left {
+  display: flex;
+}
+
+.form-editor-diagram-options-right {
+  margin-left: auto;
+}
+
+.form-editor-diagram-canvas {
+  margin-top: 5px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.active-button button {
+  background-color: #ebedef;
+}

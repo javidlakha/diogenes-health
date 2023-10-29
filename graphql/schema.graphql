@@ -1,0 +1,222 @@
+﻿schema {
+  query: Query
+  mutation: Mutation
+}
+
+type AssistantMessage {
+  content: String! @aws_cognito_user_pools
+  role: AssistantRole! @aws_cognito_user_pools
+}
+
+type AuditRecord {
+  action: String! @aws_cognito_user_pools
+  form_identifier: ID! @aws_cognito_user_pools
+  timestamp: String! @aws_cognito_user_pools
+  user: UserData! @aws_cognito_user_pools
+}
+
+type AuditSection {
+  section_identifier: ID! @aws_cognito_user_pools
+  name: String! @aws_cognito_user_pools
+}
+
+type Form {
+  deleted: String @aws_cognito_user_pools
+  form_identifier: ID! @aws_cognito_user_pools
+  last_modified: String! @aws_cognito_user_pools
+  name: String! @aws_cognito_user_pools
+  patient_identifier: String! @aws_cognito_user_pools
+  sections: [FormSection]! @aws_cognito_user_pools
+}
+
+type FormMetadata {
+  deleted: String @aws_cognito_user_pools
+  form_identifier: ID! @aws_cognito_user_pools
+  last_modified: String! @aws_cognito_user_pools
+  name: String! @aws_cognito_user_pools
+  patient_identifier: String! @aws_cognito_user_pools
+}
+
+type FormOptions {
+  checked: Boolean! @aws_cognito_user_pools
+  name: String! @aws_cognito_user_pools
+}
+
+type FormSection {
+  background: ID @aws_cognito_user_pools
+  description: String @aws_cognito_user_pools
+  name: String @aws_cognito_user_pools
+  options: [FormOptions] @aws_cognito_user_pools
+  paths: [Path] @aws_cognito_user_pools
+  section_identifier: ID! @aws_cognito_user_pools
+  svg: String @aws_cognito_user_pools
+  text: String! @aws_cognito_user_pools
+  type: SectionType @aws_cognito_user_pools
+}
+
+type Mutation {
+  create_form(patient_identifier: String!, template_identifier: ID!): Form
+    @aws_cognito_user_pools
+  create_template(
+    name: String!
+    public: Boolean!
+    sections: [TemplateSectionInput]!
+  ): Template @aws_cognito_user_pools
+  delete_form(form_identifier: ID!): FormMetadata @aws_cognito_user_pools
+  delete_template(template_identifier: ID!): Template @aws_cognito_user_pools
+  update_form(form_identifier: ID!, form: FormInput!): Form
+    @aws_cognito_user_pools
+  update_template(
+    name: String!
+    public: Boolean!
+    sections: [TemplateSectionInput]!
+    template_identifier: ID!
+  ): Template @aws_cognito_user_pools
+  upload_recording: UploadRecording! @aws_cognito_user_pools
+}
+
+type Path {
+  drawMode: Boolean! @aws_cognito_user_pools
+  paths: [Point]! @aws_cognito_user_pools
+  strokeColor: String! @aws_cognito_user_pools
+  strokeWidth: Float! @aws_cognito_user_pools
+}
+
+type Point {
+  x: Float! @aws_cognito_user_pools
+  y: Float! @aws_cognito_user_pools
+}
+
+type Query {
+  assistant(
+    form_identifier: ID!
+    messages: [AssistantMessageInput]!
+  ): [AssistantMessage]
+    @aws_cognito_user_pools(cognito_groups: ["ExperimentalAI"])
+  audit(form_identifier: ID!): [AuditRecord] @aws_cognito_user_pools
+  export(form_identifier: ID!, format: DocumentFormat!): String
+    @aws_cognito_user_pools
+  form(form_identifier: ID!): Form @aws_cognito_user_pools
+  forms: [FormMetadata] @aws_cognito_user_pools
+  patient_record(patient_identifier: String!): [Form]
+    @aws_cognito_user_pools
+  send(form_identifier: ID!, format: DocumentFormat!, to: String!): ID
+    @aws_cognito_user_pools
+  template(template_identifier: ID!): Template
+    @aws_api_key
+    @aws_cognito_user_pools
+  templates: [TemplateMetadata] @aws_api_key @aws_cognito_user_pools
+  transcribe(recording_identifier: ID!): String @aws_cognito_user_pools
+}
+
+type Template {
+  name: String! @aws_api_key @aws_cognito_user_pools
+  deleted: String @aws_cognito_user_pools
+  sections: [TemplateSection] @aws_api_key @aws_cognito_user_pools
+  template_identifier: ID! @aws_api_key @aws_cognito_user_pools
+  type: TemplateType! @aws_api_key @aws_cognito_user_pools
+}
+
+type TemplateMetadata {
+  name: String! @aws_api_key @aws_cognito_user_pools
+  template_identifier: ID! @aws_api_key @aws_cognito_user_pools
+  type: TemplateType! @aws_api_key @aws_cognito_user_pools
+}
+
+type TemplateOption {
+  name: String! @aws_api_key @aws_cognito_user_pools
+}
+
+type TemplateSection {
+  background: ID @aws_api_key @aws_cognito_user_pools
+  description: String! @aws_api_key @aws_cognito_user_pools
+  name: String! @aws_api_key @aws_cognito_user_pools
+  options: [TemplateOption] @aws_api_key @aws_cognito_user_pools
+  type: SectionType! @aws_api_key @aws_cognito_user_pools
+}
+
+type UserData {
+  name: String! @aws_cognito_user_pools
+  user_identifier: ID! @aws_cognito_user_pools
+}
+
+type UploadRecording {
+  recording_identifier: ID! @aws_cognito_user_pools
+  request_data: String! @aws_cognito_user_pools
+}
+
+enum AssistantRole {
+  assistant
+  user
+}
+
+enum DocumentFormat {
+  docx
+  pdf
+}
+
+enum SectionType {
+  checklist
+  diagram
+  single_selection
+  text
+}
+
+enum TemplateType {
+  public
+  user
+}
+
+input AssistantMessageInput {
+  content: String! @aws_cognito_user_pools
+  role: AssistantRole! @aws_cognito_user_pools
+}
+
+input TemplateOptionInput {
+  name: String!
+}
+
+input TemplateSectionInput {
+  background: ID
+  description: String!
+  name: String!
+  options: [TemplateOptionInput]
+  type: SectionType!
+}
+
+input FormInput {
+  form_identifier: ID! @aws_cognito_user_pools
+  name: String! @aws_cognito_user_pools
+  patient_identifier: String! @aws_cognito_user_pools
+  sections: [SectionInput]! @aws_cognito_user_pools
+}
+
+input SectionInput {
+  background: ID
+  description: String
+  name: String!
+  options: [OptionInput]
+  paths: [PathInput]
+  png: String
+  section_identifier: ID!
+  svg: String
+  text: String
+  type: SectionType!
+}
+
+input OptionInput {
+  checked: Boolean!
+  name: String!
+}
+
+input PathInput {
+  drawMode: Boolean!
+  paths: [PointInput]!
+  strokeColor: String!
+  strokeWidth: Float!
+}
+
+input PointInput {
+  x: Float!
+  y: Float!
+}
